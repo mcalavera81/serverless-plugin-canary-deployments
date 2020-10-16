@@ -1,0 +1,63 @@
+service: canary-deployments-test
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: "${opt:stage, 'dev'}"
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - codedeploy:*
+      Resource:
+        - "*"
+  environment: ${file(env.yml):${self:provider.stage}}
+
+
+plugins:
+  - serverless-plugin-aws-alerts
+  - serverless-plugin-canary-deployments
+
+custom:
+  alerts:
+    dashboards: false
+#    alarms:
+#      - functionErrors
+  deploymentSettings:
+    stages:
+      - dev
+      - prod
+
+functions:
+  hello:
+    name: 'hello-custom-name'
+    handler: handler.hello
+    events:
+      - http: GET hello
+    alarms:
+      - name: foo
+        namespace: 'AWS/Lambda'
+        metric: Errors
+        threshold: 1
+        statistic: Sum
+        period: 60
+        evaluationPeriods: 1
+        datapointsToAlarm: 1
+        comparisonOperator: GreaterThanOrEqualToThreshold
+        treatMissingData: missing
+    deploymentSettings:
+      type: Canary10Percent5Minutes
+      alias: Live
+      preTrafficHook: preHook
+      postTrafficHook: postHook
+      alarms:
+        - HelloFooAlarm
+  preHook:
+    handler: hooks.pre
+    timeout: 300
+    environment:
+      function_name: ${self:functions.hello.name}
+  postHook:
+    handler: hooks.post
+    timeout: 300
+    environment:
+      function_name: ${self:functions.hello.name}

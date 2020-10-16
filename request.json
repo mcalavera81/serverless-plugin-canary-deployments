@@ -1,0 +1,151 @@
+{
+    "resource": "/graphql",
+    "path": "/graphql",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "ES",
+        "content-type": "application/json",
+        "Host": "dev.api.ocdev.io",
+        "origin": "https://dev.api.ocdev.io",
+        "Referer": "https://dev.api.ocdev.io/graphql",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36",
+        "Via": "2.0 89229acad212ad74c20ccd0ac96a8cbe.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "SpEQXyqBBkmcacIwwFT1VmLGlL7FyqF0pGfKOmOKdG3UbWHpjyJ64w==",
+        "X-Amzn-Trace-Id": "Root=1-5f89bfef-4303ad2f0a826dbf0929c5df",
+        "x-api-key": "8s1L4aOqVw2TdAbJpdd8l1y1kfpFlNCP2wb98DjJ",
+        "x-country-code": "us",
+        "X-Forwarded-For": "83.33.193.169, 64.252.132.140",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https",
+        "x-language": "en"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "Accept-Encoding": [
+            "gzip, deflate, br"
+        ],
+        "Accept-Language": [
+            "en-US,en;q=0.9,es;q=0.8"
+        ],
+        "CloudFront-Forwarded-Proto": [
+            "https"
+        ],
+        "CloudFront-Is-Desktop-Viewer": [
+            "true"
+        ],
+        "CloudFront-Is-Mobile-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-SmartTV-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-Tablet-Viewer": [
+            "false"
+        ],
+        "CloudFront-Viewer-Country": [
+            "ES"
+        ],
+        "content-type": [
+            "application/json"
+        ],
+        "Host": [
+            "dev.api.ocdev.io"
+        ],
+        "origin": [
+            "https://dev.api.ocdev.io"
+        ],
+        "Referer": [
+            "https://dev.api.ocdev.io/graphql"
+        ],
+        "sec-fetch-dest": [
+            "empty"
+        ],
+        "sec-fetch-mode": [
+            "cors"
+        ],
+        "sec-fetch-site": [
+            "same-origin"
+        ],
+        "User-Agent": [
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36"
+        ],
+        "Via": [
+            "2.0 89229acad212ad74c20ccd0ac96a8cbe.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+            "SpEQXyqBBkmcacIwwFT1VmLGlL7FyqF0pGfKOmOKdG3UbWHpjyJ64w=="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5f89bfef-4303ad2f0a826dbf0929c5df"
+        ],
+        "x-api-key": [
+            "8s1L4aOqVw2TdAbJpdd8l1y1kfpFlNCP2wb98DjJ"
+        ],
+        "x-country-code": [
+            "us"
+        ],
+        "X-Forwarded-For": [
+            "83.33.193.169, 64.252.132.140"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "x-language": [
+            "en"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "ji4cua",
+        "resourcePath": "/graphql",
+        "httpMethod": "POST",
+        "extendedRequestId": "UgrtdH5yIAMFcnA=",
+        "requestTime": "16/Oct/2020:15:44:47 +0000",
+        "path": "/graphql",
+        "accountId": "554416834557",
+        "protocol": "HTTP/1.1",
+        "stage": "dev",
+        "domainPrefix": "dev",
+        "requestTimeEpoch": 1602863087606,
+        "requestId": "3f9fb015-f49b-4372-bf29-e668f6dd0ae5",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "cognitoIdentityId": null,
+            "apiKey": "8s1L4aOqVw2TdAbJpdd8l1y1kfpFlNCP2wb98DjJ",
+            "principalOrgId": null,
+            "cognitoAuthenticationType": null,
+            "userArn": null,
+            "apiKeyId": "83cxwtgnpa",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36",
+            "accountId": null,
+            "caller": null,
+            "sourceIp": "83.33.193.169",
+            "accessKey": null,
+            "cognitoAuthenticationProvider": null,
+            "user": null
+        },
+        "domainName": "dev.api.ocdev.io",
+        "apiId": "cvxo5mzvt1"
+    },
+    "body": "{\"operationName\":\"Farid\",\"variables\":{\"slug\":\"social-topic-page-example\"},\"query\":\"query Farid {\\n  countries {\\n    countries {\\n      name\\n    }\\n  }\\n}\\n\"}",
+    "isBase64Encoded": false
+}
